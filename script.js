@@ -5,6 +5,11 @@ let interval;
 let initialSeconds;
 let tickTockAudio = document.getElementById("ticTacSound");
 
+tickTockAudio.addEventListener('ended', function() {
+  this.currentTime = 0;
+  this.play();
+});
+
 function startCountdown(counterId) {
   var counterElement = document.getElementById(counterId);
   var counterValue = parseInt(counterElement.value);
