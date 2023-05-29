@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logica Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="ticTacSound" src="songs/piep-33489_DXh2qLd4.mp3" preload="auto"></audio>
+
+    <div class="container">
+      <canvas id="canvas"></canvas>
+      <div id="timer" class="timer">00:00</div>
+  
+      <div id="time-expired-message" class="time-expired-message">Tempo Esgotado!</div>
+  
+      <section class="align-inputs">
+        <div class="input-container">
+            <label for="minute">Minutos</label>
+            <input type="number" name="" id="counter-30" value="30" max="30" min="15" readonly>
+            <button class="start-button" onclick="startCountdown('counter-30')">Iniciar</button>
+        </div>
+        <div class="input-container">
+            <label for="second">Minutos</label>
+            <input type="number" name="" id="counter-15" value="15" max="15" min="15" readonly>
+            <button class="start-button" onclick="startCountdown('counter-15')">Iniciar</button>
+        </div>
+      </section>
+  
+      <div class="reset-button-container">
+        <button class="reset-button" onclick="resetCountdown()">Reset</button>
+        <script src="script.js"></script>
+        </body>  
+</html>
