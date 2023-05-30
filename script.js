@@ -97,7 +97,6 @@ window.addEventListener(
   true
 );
 
-// Resto do código...
 
 let charArr = [
   "a",
